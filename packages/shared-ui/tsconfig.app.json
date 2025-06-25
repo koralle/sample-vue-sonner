@@ -1,0 +1,16 @@
+{
+  "include": ["src", "storybook"],
+  "exclude": [],
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+
+    "types": ["@vitest/browser/matchers", "vitest/globals"],
+
+    "noEmit": true,
+    "target": "es2023",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "lib": ["es2024", "dom", "dom.iterable"],
+  }
+}
